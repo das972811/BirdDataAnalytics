@@ -1,6 +1,4 @@
-﻿using System.Dynamic;
-using System.Numerics;
-using BirdWatcher;
+﻿using BirdWatcher;
 
 public class Program
 {
@@ -9,10 +7,9 @@ public class Program
         var birds = BirdRepository.LoadBirds();
         var importedBirds = BirdRepository.LoadImportedBirds();
 
-
         // PlayingBirdDataWithLinq(birds);
         // PlayingTwoBirdDataSet(birds, importedBirds);
-        SearchBirds(birds);
+        // SearchBirds(birds);
     }
 
     public static void SearchBirds(IEnumerable<Bird> birds)
