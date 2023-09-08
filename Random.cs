@@ -2,7 +2,7 @@ namespace BirdWatcher;
 
 public class RandomUtility
 {
-    private Random gen = new(); 
+    private readonly Random gen = new(); 
 
     public List<Sighting> AddRandomSightings(int count)
     {
