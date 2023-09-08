@@ -16,7 +16,7 @@ public class RandomUtility
 
     public DateTime RandomDate()
     {
-        DateTime start = new DateTime(2015, 1, 1);
+        DateTime start = new(2015, 1, 1);
         int range = (DateTime.Today - start).Days;
         return start.AddDays(gen.Next(range));
     }
